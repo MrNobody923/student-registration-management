@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  form {
+    height: 100vh;
+  }
+  
+  .sub-main-container {
+    grid-area: 1 / 3 / 11 / 9;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    display: grid;
+    
+  }
+  
+  .info-container {
+    grid-area: 2 / 4 / 9 / 8;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    display: grid;
+    border-color: black;
+    border-style:groove;
+    background-color: azure;
+    
+  }
+  
+  .main-container input[type="text"] {
+    height: 5vh;
+    width: 24.8vw;
+    font-size: 1.3vw;
+  }
+  
+  .user-id {
+    grid-area: 2 / 2 / 3 / 6;
+  }
+  .user-lname {
+    grid-area: 3 / 2 / 4 / 6; 
+  }
+  .user-fname {
+    grid-area: 4 / 2 / 5 / 6;
+  }
+  .user-age {
+    grid-area: 5 / 2 / 6 / 6; 
+  }
+  .user-stat {
+    grid-area: 6 / 2 / 7 / 6;
+  }
+  .user-address {
+    grid-area: 7 / 2 / 8 / 6;;
+  }
+  .user-contact {
+    grid-area: 8 / 2/ 9 / 6;
+  }
+  .submit-btn {
+    grid-area: 9 / 2 / 10 / 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .submit-btn input {
+    padding: 1px 2px;
+    border-radius: 50rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: navy;
+    height: 40px;
+    width: 11vw;
+  }
+  .submit-btn input:hover {
+    background-color: blue;
+  }
+  
+  .submit-btn a {
+    text-decoration: none;
+    height: 39px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border-color: black;
+    background-color: navy;
+    width: 11vw;
+    border-style: solid;
+    border-radius: 50rem;
+    border-width: thin;
+  }
+  .submit-btn a:hover {
+    background-color: blue;
+  }
+  .container-btn {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+  
+    > a {
+      height: 35px;
+      width: 35px;
+      border: 1px solid black;
+      border-radius: 50%;
+      place-items: center;
+      border-width: medium;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .container-btn a:hover {
+    color: white;
+    background-color: black;
+  
+    > svg {
+      fill: white;
+    }
+  }  
